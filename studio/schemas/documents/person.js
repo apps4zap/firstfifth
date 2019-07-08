@@ -23,6 +23,15 @@ export default {
       title: 'Image',
       type: 'mainImage'
     },
+{
+      name: 'crew',
+      type: 'array',
+      title: 'Crew',
+      of: [{type: 'string'}],
+      options: {
+        layout: 'tags'
+      }
+    },
     {
       name: 'bio',
       type: 'bioPortableText',
