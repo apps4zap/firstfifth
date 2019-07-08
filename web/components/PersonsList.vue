@@ -11,7 +11,6 @@
           class="personImage"
         />
         {{ personRef.person.name }}
-        {{ personRef.person.crew }}
       </nuxt-link>
     </li>
   </ul>
