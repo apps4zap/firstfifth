@@ -33,6 +33,11 @@ export default {
       }
     },
     {
+      name: 'abilities',
+      title: 'Magic',
+      type: 'magic'
+    }
+    {
       name: 'bio',
       type: 'bioPortableText',
       title: 'Biography'
