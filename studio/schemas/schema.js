@@ -49,6 +49,6 @@ export default createSchema({
     eventReference,
     personReference,
     magic,
-    physical
+    physical,
   ])
 })
