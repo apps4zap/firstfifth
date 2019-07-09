@@ -97,7 +97,7 @@ export default {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue|ogg|mp3)$/
+          test: /\.(js|vue|ogg|mp3)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
