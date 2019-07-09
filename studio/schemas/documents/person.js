@@ -25,8 +25,8 @@ export default {
     },
 {
       name: 'crew',
-      type: 'array',
       title: 'Crew',
+      type: 'array',
       of: [{type: 'string'}],
       options: {
         layout: 'tags'
