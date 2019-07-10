@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'Track',
-      title: 'Track'
+      title: 'Track',
       type: 'pTrack'
     },
 {
