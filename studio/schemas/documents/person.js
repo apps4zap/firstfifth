@@ -23,6 +23,11 @@ export default {
       title: 'Image',
       type: 'mainImage'
     },
+    {
+      name: 'Track',
+      title: 'Track'
+      type: 'pTrack'
+    },
 {
       name: 'crew',
       title: 'Crew',
