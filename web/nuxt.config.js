@@ -83,7 +83,14 @@ export default {
             },
             'custom-properties': {
               preserve: false
-            }
+            },
+loaders: {
+      vue: {
+        transformAssetUrls: {
+          audio: 'src',
+        },
+      },
+    },
           }
         }
       }
