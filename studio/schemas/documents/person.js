@@ -24,6 +24,11 @@ export default {
       type: 'mainImage'
     },
     {
+      name: 'pics',
+      title: 'Pics',
+      type: 'photos'
+    },
+    {
       name: 'Track',
       title: 'Track',
       type: 'pTrack'
