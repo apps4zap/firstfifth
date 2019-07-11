@@ -2,8 +2,7 @@ export default {
   title: 'Photos',
   name: 'photos',
   type: 'array',
-  of: [{type: 'image'}]
-    fields: [
+  of: [
     {
   title: 'Photo1',
   name: 'photo1',
