@@ -16,7 +16,7 @@ export default {
       {
          title: 'Photo3',
          name: 'photo3',
-         type: 'name'
+         type: 'image'
       }
       ]
    }
