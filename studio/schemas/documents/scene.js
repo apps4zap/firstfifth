@@ -1,5 +1,3 @@
-import icon from 'react-icons/lib/md/av-timer'
-
 export default {
   name: 'scene',
   type: 'document',
@@ -30,7 +28,7 @@ export default {
       ]
     },
     {
-      name: 'sessionType',
+      name: 'sceneType',
       type: 'string',
       title: 'Scene type',
       options: {
@@ -57,15 +55,15 @@ export default {
   preview: {
     select: {
       title: 'title',
-      sessionType: 'sessionType',
+      sceneType: 'sceneType',
       person: 'person.name',
       media: 'image'
     },
-    prepare ({title, media, sessionType, person}) {
+    prepare ({title, media, sceneType, person}) {
       return {
         title,
         media,
-        subtitle: `${sessionType} ${person ? `- ${person}` : ''}`
+        subtitle: `${sceneType} ${person ? `- ${person}` : ''}`
       }
     }
   }
