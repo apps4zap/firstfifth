@@ -2,7 +2,6 @@ export default {
   name: 'scene',
   type: 'document',
   title: 'Scene',
-  icon,
   fields: [
     {
       name: 'title',
