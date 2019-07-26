@@ -10,6 +10,7 @@ import person from './documents/person'
 import codeOfConduct from './documents/codeOfConduct'
 import session from './documents/session'
 import program from './documents/program'
+import scene from './documents/scene'
 
 // Object types
 import mainImage from './objects/mainImage'
