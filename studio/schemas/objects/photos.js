@@ -1,8 +1,8 @@
 export default {
   title: 'Photos',
   name: 'photos',
-  type: 'array',
-  of: [
+  type: 'object',
+  fields: [
     {
   title: 'Photo1',
   name: 'photo1',
