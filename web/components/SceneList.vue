@@ -1,10 +1,10 @@
 <template>
   <ul class="sceneList">
-    <SessionItem
-      v-for="(scheduleItem, index) in program.schedule"
+    <SceneItem
+      v-for="(sceneItem, index) in program.schedule"
       :key="sceneItem._key"
       :index="index"
-      :scenee-item="scheduleItem"
+      :scene-item="sceneItem"
     />
   </ul>
 </template>
@@ -19,7 +19,7 @@ export default {
       type: Object,
       default: () => {},
     },
-    program: {
+    book: {
       type: Object,
       default: () => {},
       scene: {
@@ -28,7 +28,6 @@ export default {
       }
     }
   }
-}
 </script>
 
 <style scoped>
