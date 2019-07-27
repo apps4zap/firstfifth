@@ -28,6 +28,8 @@ import magic from './objects/magic'
 import physical from './objects/physical'
 import pTrack from './objects/pTrack'
 import photos from './objects/photos'
+import sceneReference from './objects/sceneReference'
+import chapter from './objects/chapter'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -60,6 +62,8 @@ export default createSchema({
     magic,
     physical,
     pTrack,
+    chapter,
+    sceneReference,
     photos
   ])
 })
