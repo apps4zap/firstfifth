@@ -16,6 +16,7 @@ import chapterInformation from './documents/chapterInformation'
 // Object types
 import mainImage from './objects/mainImage'
 import venue from './objects/venue'
+import location from './objects/location',
 import schedule from './objects/schedule'
 import scheduleItem from './objects/scheduleItem'
 import bioPortableText from './objects/bioPortableText'
@@ -40,6 +41,7 @@ export default createSchema({
     eventInformation,
     person,
     venue,
+    location,
     session,
     scene,
     chapterInformation,
