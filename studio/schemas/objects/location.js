@@ -1,7 +1,7 @@
 export default {
-  name: 'venue',
+  name: 'location',
   type: 'object',
-  title: 'Venue',
+  title: 'Location',
   fields: [
     {
       name: 'name',
