@@ -50,7 +50,7 @@ export default createSchema({
     schedule,
     program,
     location,
-    venue
+    venue,
     scheduleItem,
     mainImage,
     bioPortableText,
