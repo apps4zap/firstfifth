@@ -14,14 +14,9 @@ export default {
       title: 'City'
     },
     {
-      name: 'postCode',
+      name: 'region',
       type: 'string',
-      title: 'Post code'
-    },
-    {
-      name: 'country',
-      type: 'string',
-      title: 'Country'
+      title: 'Region'
     }
   ]
 }
