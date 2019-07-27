@@ -13,6 +13,7 @@ import program from './documents/program'
 import scene from './documents/scene'
 import chapterInformation from './documents/chapterInformation'
 import book from './documents/book'
+import sceneInformation from './documents/sceneInformation'
 
 
 // Object types
@@ -48,6 +49,7 @@ export default createSchema({
     scene,
     book,
     chapterInformation,
+    sceneInformation,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
