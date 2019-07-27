@@ -46,7 +46,7 @@ export default createSchema({
     person,
     session,
     scene,
-    book
+    book,
     chapterInformation,
 
     // When added to this list, object types can be used as
