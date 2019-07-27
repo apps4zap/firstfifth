@@ -1,7 +1,7 @@
 export default {
   name: 'program',
   type: 'document',
-  title: 'Program',
+  title: 'Table of Contents',
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
     {
