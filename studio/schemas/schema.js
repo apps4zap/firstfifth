@@ -12,6 +12,7 @@ import session from './documents/session'
 import program from './documents/program'
 import scene from './documents/scene'
 import chapterInformation from './documents/chapterInformation'
+import book from './documents/book'
 
 
 // Object types
@@ -45,6 +46,7 @@ export default createSchema({
     person,
     session,
     scene,
+    book
     chapterInformation,
 
     // When added to this list, object types can be used as
