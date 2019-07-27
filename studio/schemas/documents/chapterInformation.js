@@ -21,12 +21,6 @@ export default {
       title: 'Chapter Image'
     },
     {
-      name: 'Time',
-      type: 'time',
-      title: 'Time',
-      description: 'From when to when does this take place?'
-    },
-    {
       name: 'location',
       type: 'location',
       title: 'Venue',
