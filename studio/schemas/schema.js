@@ -11,6 +11,7 @@ import codeOfConduct from './documents/codeOfConduct'
 import session from './documents/session'
 import program from './documents/program'
 import scene from './documents/scene'
+import chapterInformation from './documents/chapterInformation'
 
 // Object types
 import mainImage from './objects/mainImage'
