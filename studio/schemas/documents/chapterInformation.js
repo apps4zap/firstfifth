@@ -23,7 +23,7 @@ export default {
     {
       name: 'location',
       type: 'location',
-      title: 'Venue',
+      title: 'Location',
       description: 'Where does the action take place?'
     },
     {
