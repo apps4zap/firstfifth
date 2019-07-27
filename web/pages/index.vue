@@ -5,16 +5,6 @@
       <p class="subtitle">{{ info.description }}</p>
     </header>
 
-    <figure :v-if="info.image">
-      <SanityImage
-        :image="info.image"
-        :width="1800"
-        :height="500"
-        class="mainImage"
-      />
-      <figcaption>{{ info.image.caption }}</figcaption>
-    </figure>
-
     <div class="sceneListContainer">
       <h2 class="sceneListTitle">Scenes</h2>
       <SceneList :program="program" :info="info" />
