@@ -18,7 +18,7 @@ import SanityImage from '~/components/SanityImage'
 import SceneList from '~/components/SceneList'
 const query = `
   {
-    "info": *[_id == "eventInformation"] {
+    "info": *[_id == "chapterInformation"] {
       ..., image { ..., asset->}
     }[0]
   }
@@ -75,7 +75,7 @@ export default {
   margin-bottom: 0;
   font-weight: 600;
 }
-.title + p + .dates + .venue {
+.title + p + .dates + .location {
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
   margin-bottom: 5rem;
