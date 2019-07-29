@@ -1,5 +1,5 @@
 <template>
-  <ul class="sceneList">
+  <ul class="sessionList">
     <SceneItem
       v-for="(sceneItem, index) in book.outline"
       :key="sceneItem._key"
@@ -34,7 +34,7 @@ export default {
 <style scoped>
 @import '../styles/custom-properties.css';
 
-.sceneList {
+.sessionList {
   margin: 0;
   padding: 0;
 }
