@@ -1,7 +1,7 @@
 <template>
   <ul class="sceneList">
     <SceneItem
-      v-for="(sceneItem, index) in program.schedule"
+      v-for="(sceneItem, index) in book.outline"
       :key="sceneItem._key"
       :index="index"
       :scene-item="sceneItem"
