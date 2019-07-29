@@ -7,7 +7,7 @@
 
     <div class="sceneListContainer">
       <h2 class="sceneListTitle">Scenes</h2>
-      <SceneList :program="program" :info="info" />
+      <SceneList :book="book" :info="info" />
     </div>
   </section>
 </template>
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      program: this.$store.getters.getProgram
+      book: this.$store.getters.getBook
     }
   },
   async asyncData() {
