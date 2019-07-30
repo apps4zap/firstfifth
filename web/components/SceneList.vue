@@ -1,5 +1,5 @@
 <template>
-  <ul class="sessionList">
+  <ul class="sceneList">
     <SceneItem
       v-for="(sceneItem, index) in book.outline"
       :key="sceneItem._key"
