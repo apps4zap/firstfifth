@@ -1,0 +1,23 @@
+<template>
+  <nuxt-link to="/">
+    <b>{{ sceneName }}</b>
+  </nuxt-link>
+</template>
+
+<script>
+export default {
+  props: {
+    event: {
+      type: Object,
+      default: () => {
+        return { name: 'This scene' }
+      }
+    }
+  },
+  computed: {
+    sceneName: props => {
+      return props.scene.name
+    }
+  }
+}
+</script>
