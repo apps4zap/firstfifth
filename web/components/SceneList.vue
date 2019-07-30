@@ -34,7 +34,7 @@ export default {
 <style scoped>
 @import '../styles/custom-properties.css';
 
-.sessionList {
+.sceneList {
   margin: 0;
   padding: 0;
 }
