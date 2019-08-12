@@ -1,8 +1,8 @@
 <template>
   <section class="container">
     <header class="header">
-      <h1 class="title">{{ info.name }}</h1>
-      <p class="subtitle">{{ info.description }}</p>
+      <h1 class="title">TOPICAL</h1>
+      <p class="subtitle">Anesthetic</p>
     </header>
 
     <div class="sceneListContainer">
