@@ -31,10 +31,10 @@ export default {
   }
 </script>
 
-<style scoped>
+/*<style scoped>
 @import '../styles/custom-properties.css';
 .sceneList {
   margin: 0;
   padding: 0;
 }
-</style>
+</style>*/
