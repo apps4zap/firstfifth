@@ -11,8 +11,8 @@
     <div class="bio" :v-if="bio.length > 0">
       <BlockContent v-if="bio" :blocks="bio" />
     </div>
-    <div v-if="scheduleItems" class="sessions">
-      <h2>Sessions</h2>
+    <div v-if="scheduleItems" class="scenes">
+      <h2>Sceness</h2>
       <SessionItem
         v-for="scheduleItem in scheduleItems"
         :key="scheduleItem._key"
@@ -26,7 +26,7 @@
 import groq from 'groq'
 import sanityClient from '~/sanityClient'
 import SanityImage from '~/components/SanityImage'
-import SessionItem from '~/components/SessionItem'
+import SceneItem from '~/components/SceneItem'
 import BlockContent from 'sanity-blocks-vue-component'
 import blocksToText from '~/lib/blocksToText'
 const query = groq`
@@ -36,23 +36,23 @@ export default {
   components: {
     SanityImage,
     BlockContent,
-    SessionItem
+    SceneItem
   },
   data() {
     return {
       name: undefined,
       bio: [],
-      program: this.$store.getters.getProgram,
+      book: this.$store.getters.getBook,
       plainTextBio: blocksToText(this.bio)
     }
   },
   computed: {
-    scheduleItems: data => {
-      return data.program.schedule.filter(item => {
+    sceneItems: data => {
+      return data.book.schedule.filter(item => {
         return (
-          item.session &&
-          item.session.persons &&
-          item.session.persons.filter(person => person.person._id === data.id)
+          item.scene &&
+          item.scene.persons &&
+          item.scene.persons.filter(person => person.person._id === data.id)
             .length > 0
         )
       })
@@ -62,9 +62,9 @@ export default {
     return await sanityClient.fetch(query, params)
   },
   head() {
-    const { name } = this.$store.getters.eventInformation
+    const { name } = this.$store.getters.sceneInformation
     return {
-      title: `Sessions | ${name}`,
+      title: `Scenes | ${name}`,
       meta: [
         {
           hid: 'description',
@@ -97,13 +97,13 @@ export default {
     line-height: var(--font-title3-line-height);
   }
 }
-.sessions {
+.scenes {
   text-align: left;
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 5rem;
 }
-.sessions h2 {
+.scenes h2 {
   text-align: center;
   margin: 4rem 0 2rem;
   font-weight: 600;
