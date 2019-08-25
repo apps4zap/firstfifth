@@ -18,7 +18,7 @@ import SanityImage from '~/components/SanityImage'
 import SceneList from '~/components/SceneList'
 const query = `
   {
-    "info": *[_id == "chapterInformation"] {
+    "info": *[_id == "sceneInformation"] {
       ..., image { ..., asset->}
     }[0]
   }
