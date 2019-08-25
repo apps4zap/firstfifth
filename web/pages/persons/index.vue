@@ -1,16 +1,16 @@
 <template>
   <section class="container">
-    <h1 class="title">Speakers</h1>
-    <ul class="speakers">
-      <li v-for="speaker in speakers" :key="speaker._id" class="speaker">
-        <nuxt-link :to="{ path: `/speakers/${speaker.slug.current}` }">
+    <h1 class="title">Charactersers</h1>
+    <ul class="persons">
+      <li v-for="person in persons" :key="person._id" class="person">
+        <nuxt-link :to="{ path: `/persons/${person.slug.current}` }">
           <SanityImage
             width="256"
             height="256"
-            :image="speaker.image"
+            :image="person.image"
             class="avatar"
           />
-          <h2 class="name">{{ speaker.name || 'Secret speaker' }}</h2>
+          <h2 class="name">{{ person.name || 'Secret person' }}</h2>
         </nuxt-link>
       </li>
     </ul>
@@ -23,7 +23,7 @@ import sanityClient from '~/sanityClient'
 import SanityImage from '~/components/SanityImage'
 const query = groq`
   {
-    "speakers": *[_type == "person"]
+    "persons": *[_type == "person"]
   }
 `
 export default {
@@ -47,7 +47,7 @@ export default {
 .title {
   margin-bottom: 4rem;
 }
-.speakers {
+.persons {
   display: grid;
   margin: 0 auto;
   padding: 0;
@@ -55,7 +55,7 @@ export default {
   max-width: var(--width-medium);
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
-.speaker {
+.person {
   display: block;
   position: relative;
   margin-bottom: 4em;
@@ -69,7 +69,7 @@ export default {
     line-height: var(--font-title3-line-height);
   }
 }
-.speaker a {
+.person a {
   color: inherit;
   text-decoration: inherit;
 }
