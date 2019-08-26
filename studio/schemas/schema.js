@@ -13,7 +13,8 @@ import program from './documents/program'
 import scene from './documents/scene'
 import chapterInformation from './documents/chapterInformation'
 import book from './documents/book'
-import sceneInformation from './documents/sceneInformation'
+import bookInformation from './documents/bookInformation'
+import author from './documents/author'
 
 
 // Object types
@@ -32,6 +33,9 @@ import pTrack from './objects/pTrack'
 import photos from './objects/photos'
 import sceneReference from './objects/sceneReference'
 import chapter from './objects/chapter'
+import sceneInformation from './documents/sceneInformation'
+import thememusic from './objects/thememusic'
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -50,6 +54,8 @@ export default createSchema({
     book,
     chapterInformation,
     sceneInformation,
+    bookInformation,
+    author
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
@@ -68,6 +74,7 @@ export default createSchema({
     pTrack,
     chapter,
     sceneReference,
-    photos
+    photos,
+    thememusic
   ])
 })
