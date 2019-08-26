@@ -22,13 +22,13 @@ export default {
     },
     {
       name: 'Era',
-      type: 'era',
+      type: 'string',
       title: 'Era',
       description: 'When does the action take place?'
     },
     {
       name: 'Locale',
-      type: 'locale',
+      type: 'string',
       title: 'Locale',
       description: 'Where will the event take place?'
     },
