@@ -37,10 +37,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
+  /*plugins: [
     {src: '~/plugins/eventInformation'},
     {src: '~/plugins/storyIntro'}
-  ],
+  ],*/
 
   /*
    ** Nuxt.js modules
@@ -50,12 +50,12 @@ export default {
   /*
    ** Set global info from sanity document
    */
-  storyIntro: () => {
+  /*storyIntro: () => {
     return sanityClient.fetch('*[_id == "storyIntro"]').then(res => res)
   },
   eventInformation: () => {
     return sanityClient.fetch('*[_id == "eventInformation"]').then(res => res)
-  },
+  },*/
 
   /*
    ** Generate dynamic routes from data from sanity.
