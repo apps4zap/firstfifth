@@ -58,3 +58,34 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+.container {
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  min-height: calc(100% - 72px - 216px);
+}
+.header {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.sceneListTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin: 0 0 3rem;
+  @media (--media-min-medium) {
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+  }
+}
+.sceneListContainer {
+  max-width: var(--width-small);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+</style>
