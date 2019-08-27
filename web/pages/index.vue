@@ -60,8 +60,6 @@ export default {
 </script>
 
 <style scoped>
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
 .container {
   padding: 1.5rem 0;
   box-sizing: border-box;
